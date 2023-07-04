@@ -183,11 +183,11 @@ public class SpreadSheetServiceImpl implements SpreadSheetService{
         return values;
     }
 
-    private boolean containsSumSignature(String item){
+    public boolean containsSumSignature(String item){
         return item.matches("^#\\(sum((?:\\s*\\w+\\s*)+)?\\)$");
     }
 
-    private boolean containsProdSignature(String item){
+    public boolean containsProdSignature(String item){
         return item.matches("^#\\(prod((?:\\s*\\w+\\s*)+)?\\)$");
     }
 
